@@ -38,7 +38,8 @@ def stop_alarm():
     mixer.music.stop()
 
 
-Label(root, text="Alarm Clock", font=("Helvetica 20 bold"), fg="red").pack(pady=10)
+Label(root, text="Alarm Clock", font=(
+    "Helvetica 20 bold"), fg="red").pack(pady=10)
 Label(root, text="Set Time", font=("Helvetica 15 bold")).pack()
 
 frame = Frame(root)
@@ -215,7 +216,8 @@ second.set(seconds[0])
 secs = OptionMenu(frame, second, *seconds)
 secs.pack(side=LEFT)
 
-Button(root, text="Set Alarm", font=("Helvetica 15"), command=Threading).pack(pady=20)
+Button(root, text="Set Alarm", font=("Helvetica 15"),
+       command=Threading).pack(pady=20)
 
 button = Button(root, text="Stop Alarm", bg="red", fg="white", command=stop_alarm).pack(
     pady=30

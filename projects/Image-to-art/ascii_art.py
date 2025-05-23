@@ -6,7 +6,7 @@ ascii_characters_by_surface = (
 
 
 def main():
-    image = Image.open("test1.jpg")
+    image = Image.open("projects\Image-to-art\IMG_8537.jpg")
     image = image.resize((100, 100))
     # you can first resize the image if needed
     # image = image.resize((width, height))
@@ -36,7 +36,7 @@ def convert_pixel_to_character(pixel):
 
 
 def save_as_text(ascii_art):
-    with open("image.txt", "w") as file:
+    with open("IMG_8537.jpg", "w") as file:
         for line in ascii_art:
             file.write(line)
             file.write("\n")
@@ -44,4 +44,4 @@ def save_as_text(ascii_art):
 
 
 if __name__ == "__main__":
-    main()
+    print(main())
